@@ -3,7 +3,121 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
+/* ======= Primary Button Styles ======== */
+.primary-btn{
+    width: 180px;
+    height: 64px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    background-color: #FF900E;
+    border-radius: 5px;
+}
+
 /* -------- Navigation Styles --------- */
+.header{
+    background: rgba(255, 144, 14, 0.1);
+}
 .top-navigation{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    margin: auto;
+}
+.nav-title{
+    color: #131313;
+    font-size: 45px;
+}
+.contact ul{
+    display: flex;
+}
+.contact ul li{
+    list-style: none;
+}
+.contact ul li a{
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 18px;
+    color: #424242;
+    font-weight: 500;
+}
+
+/* ---------- Header Content Styles ---------- */
+.header-content{
+    width: 862px;
+    margin: auto;
+    text-align: center;
+}
+
+.header-content-title{
+    font-size: 64px;
+    color: #131313;
+    font-weight: 800;
+}
+.header-content-discription{
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.header-content-banner{
+    width: 1140px;
+    margin: auto;
+}
+/* Header content Image */
+.header-content-banner img{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+
+/* 
+-------------------------------------------
+Responsive for Mobile using media query 
+------------------------------------------- 
+*/
+
+@media screen and (max-width:576px) {
+
+    /* ----- Header Navigation responsive ------- */
+    .header{
+        width: 100%;
+    }
+    .nav-title{
+        font-size: 45px;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+
+    }
+    .top-navigation{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    .contact ul{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+
+
+    /* ------ Header content responsive -------- */
+    .header-content{
+        width: 100%;
+    }
+    .header-content-title{
+        font-size: 30px;
+    }
+    .header-content-banner{
+        width: 100%;
+    }
+    .header-content-banner img{
+        width: 100%;
+    }
 }
