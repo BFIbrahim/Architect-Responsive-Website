@@ -1,0 +1,9 @@
+/* --------Primary Font----------*/
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* -------- Navigation Styles --------- */
+.top-navigation{
+    display: flex;
+}
