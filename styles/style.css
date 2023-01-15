@@ -197,9 +197,9 @@ body{
 }
 .facts-item:hover{
     background-color: #FF900E;
-    transition: 0.3s;
-    color: white;
+    color: #FFFFFF;
     cursor: pointer;
+    transition: 0.3s;
 }
 .facts-container{
     width: 1140px;
@@ -231,8 +231,28 @@ body{
     color: #727272;
 }
 
+/* -----Bottom Message styles-------- */
+.bottom-message{
+    width: 1140px;
+    margin: auto;
+    background: #FFF4E7;
+    margin-top: 100px;
+    
+}
+.bottom-message-text p{
+    padding: 38px;
+    text-align: center;
+    font-size: 20px;
+    color: #424242;
+}
 
+/* 
+-------------------------------
+Extra tab Styles
+-------------------------------
+*/
 
+/*------------- Footer styles---------------- */
 
 /* 
 -------------------------------------------
@@ -355,9 +375,22 @@ Responsive for Mobile using media query
 
     }
     .sponsor-top-content{
-
         width: 100%;
 
     }
+
+    /* ------ Bottom message responsive------ */
+    .bottom-message{
+        width: 100%;
+    }
+
+    /* 
+    ----------------------
+    Extra Tab responsive
+    ----------------------
+    */
+
+    /* ------- form Responsive ------- */
+
 
 }
