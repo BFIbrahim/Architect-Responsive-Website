@@ -145,7 +145,7 @@ body{
 }
 
 .features-list-image img{
-    width: 650px;
+    width: 490px;
     height: 1060px;
 }
 .experience-button {
@@ -158,6 +158,44 @@ body{
 .experience-button h3{
     font-size: 45px;
     line-height: 0px;
+}
+
+/*--------- facts Section styles --------- */
+.facts-item-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.facts-top-content{
+    width: 600px;
+}
+.facts-top-title{
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: 700;
+}
+.facts-top-description{
+    line-height: 26px;
+    color: #727272;
+}
+
+.facts-item{
+    width: 241px;
+    height: 220px;
+    text-align: center;
+    border: 2px solid #FF900E;
+    padding: 50px 0px 0px 0px;
+    border-radius: 5px;
+}
+.facts-item:hover{
+    background-color: #FF900E;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+.facts-container{
+    width: 1140px;
+    margin: auto;
 }
 
 
@@ -251,6 +289,20 @@ Responsive for Mobile using media query
     .experience-button h3{
         font-size: 30px;
         line-height: 0px;
+    }
+
+    .facts-item-container{
+        flex-direction: column;
+    }
+    .facts-container{
+        width: 100%;
+    }
+    .facts-top-content{
+        width: 100%;
+    }
+    .facts-item{
+        width: 100%;
+        margin-bottom: 30px;
     }
 
 }
