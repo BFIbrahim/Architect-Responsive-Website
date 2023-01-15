@@ -168,6 +168,7 @@ body{
 }
 .facts-top-content{
     width: 600px;
+    margin-top: 100px;
 }
 .facts-top-title{
     font-size: 45px;
@@ -187,6 +188,13 @@ body{
     padding: 50px 0px 0px 0px;
     border-radius: 5px;
 }
+.facts-item h4{
+    color: #727272;
+    line-height: 0;
+}
+.facts-item h3{
+    color: #424242;
+}
 .facts-item:hover{
     background-color: #FF900E;
     transition: 0.3s;
@@ -197,6 +205,33 @@ body{
     width: 1140px;
     margin: auto;
 }
+
+/*-------Sponsor section styles ------ */
+.sponsor-container{
+    width: 1140px;
+    margin: auto;
+    margin-top: 100px;
+}
+.sponsor-top-content{
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+.sponsor-items-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.sponsor-title{
+    font-size: 45px;
+}
+.sponsor-discription{
+    line-height: 26px;
+    color: #727272;
+}
+
+
 
 
 /* 
@@ -291,6 +326,8 @@ Responsive for Mobile using media query
         line-height: 0px;
     }
 
+    /*-----Facts responsive---------*/
+
     .facts-item-container{
         flex-direction: column;
     }
@@ -299,10 +336,28 @@ Responsive for Mobile using media query
     }
     .facts-top-content{
         width: 100%;
+        text-align: center;
     }
     .facts-item{
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    /*-----Sponsor Responsive----------*/
+    .sponsor-items-container{
+        text-align: center;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .sponsor-container{
+        width: 100%;
+
+    }
+    .sponsor-top-content{
+
+        width: 100%;
+
     }
 
 }
